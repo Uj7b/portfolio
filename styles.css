@@ -40,13 +40,14 @@ header ul {
 }
 header a {
   color: white;
-  font: 14px "plus-jakarta-sans-regular";
+  font: 16px "plus-jakarta-sans-regular";
   cursor: pointer;
 }
 header a:hover {
 }
 /* Buttons */
 .action-btn {
+  text-decoration: none;
   border: none;
   border-radius: 50px;
   padding: 15px 20px;
@@ -56,6 +57,7 @@ header a:hover {
 /* Get in touch button */
 .action-btn.touch {
   background: white;
+  color: black;
   border: 2px solid transparent; /* Add this */
 }
 /* Download CV button */
@@ -83,7 +85,39 @@ header a:hover {
 }
 
 .experience-with {
-  color: #C5C5C5;
+  color: #c5c5c5;
   text-transform: uppercase;
   font-family: "poppins-semibold";
+}
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.profile img {
+  width: 100%;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  min-height: 100vh;
+  gap: 47px;
+  background: fuchsia;
+}
+
+.logos i {
+  font-size: 72px;
+  background: -webkit-linear-gradient(
+    rgba(253, 253, 253, 1),
+    /* 100% opacity */ rgba(255, 255, 255, 0.18) /* 18% opacity */
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
