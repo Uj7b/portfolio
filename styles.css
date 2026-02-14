@@ -7,6 +7,10 @@
   src: url(assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
+  font-family: "poppins-semibold";
+  src: url(assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
   font-family: "plus-jakarta-sans-regular";
   src: url(assets/fonts/PlusJakartaSans-Regular.ttf);
 }
@@ -24,10 +28,15 @@ body {
 /* Nav bar properties */
 header {
   background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 header ul {
   display: flex;
   list-style: none;
+  gap: 20px;
 }
 header a {
   color: white;
@@ -47,21 +56,34 @@ header a:hover {
 /* Get in touch button */
 .action-btn.touch {
   background: white;
+  border: 2px solid transparent; /* Add this */
 }
 /* Download CV button */
 .action-btn.cv {
+  color: white;
   border: 2px solid white;
+  background: transparent;
 }
-
+.action-btn.cv:hover {
+  color: black;
+  background: white;
+  transition: all 0.3s ease;
+}
 .projects-section {
   font: 72px "poppins-bold";
-  background: -webkit-linear-gradient(#FF8660, #D5491D);
-  -webkit-background-clip: text;
+  background: -webkit-linear-gradient(#ff8660, #d5491d);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .experiences-section {
   font: 72px "poppins-bold";
   background: -webkit-linear-gradient(#5badff, #1373d1);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.experience-with {
+  color: #C5C5C5;
+  text-transform: uppercase;
+  font-family: "poppins-semibold";
 }
