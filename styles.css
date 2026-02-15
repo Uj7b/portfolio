@@ -7,6 +7,10 @@
   src: url(assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
+  font-family: "poppins-extraBold";
+  src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
   font-family: "poppins-semibold";
   src: url(assets/fonts/Poppins-SemiBold.ttf);
 }
@@ -72,13 +76,13 @@ header a:hover {
   transition: all 0.3s ease;
 }
 .projects-section {
-  font: 72px "poppins-bold";
+  font: 45px "poppins-bold";
   background: -webkit-linear-gradient(#ff8660, #d5491d);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .experiences-section {
-  font: 72px "poppins-bold";
+  font: 45px "poppins-bold";
   background: -webkit-linear-gradient(#5badff, #1373d1);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -109,7 +113,7 @@ header a:hover {
   margin-top: 100px;
   min-height: 100vh;
   gap: 47px;
-  background: fuchsia;
+  /* background: fuchsia; */
 }
 
 .logos i {
@@ -120,4 +124,32 @@ header a:hover {
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.heading {
+  font: 40px "poppins-extraBold";
+  color: white;
+}
+.heading span {
+  background: -webkit-linear-gradient(left,#FF8660, #9A33FF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.description {
+  color: white;
+  background: blue;
+  width: 55%;
+  text-align: center;
+  font: 14px "poppins-regular";
+}
+.experience-with {
+  background: red;
+}
+.experience-with span {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.logos {
+  display: flex;
+  background: #000;
 }
